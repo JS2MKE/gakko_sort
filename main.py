@@ -40,7 +40,7 @@ while i <= x:
     numbers[j + 1] = temporary
     i += 1
 
-if banme <= len(numbers) :
+if 0 < banme <= len(numbers) :
     print (numbers[banme - 1])
 else :
     print (banme,"番目の数は存在しません。大きすぎるか、0または負の数である可能性があります。")
