@@ -1,11 +1,9 @@
 '''
-    Copyright 2023 Kojima Shun
+Copyright 2023 Kojima Shun
 
-     This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
 '''
 
 print("\">\"が表示されたら、数字を入力してください。Enterを押すごとに、次の数を入力できます。\nすべての数字を入力し終わったら、bと入力してください。\nそうすれば、[何番目の数を表示しますか？]というプロンプトが表示されます。\n任意の数Xを入力すれば、最初に入力した数の中でX番目に小さい数を表示します。")
