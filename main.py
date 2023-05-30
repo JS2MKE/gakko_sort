@@ -15,7 +15,7 @@ while True:
         break
     else:
         if arg.isdecimal() == True:
-            list.append(arg)
+            list.append(int(arg))
         else:
             print(arg,"は、数字でもコマンドでもありません。数字か、bを入力してください。")
 
