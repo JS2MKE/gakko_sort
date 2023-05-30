@@ -21,7 +21,7 @@ while True:
 
 banme = int( input("[何番目の数を表示しますか？]") )
 
-print("##from line 24## list=",list)
+print("##from line 24## 処理前のlist=",list)
 
 x = len(list) - 1
 
@@ -31,14 +31,13 @@ i = 1
 while i <= x :
     print("##from line 32## ==start of while loop==")
     print("##from line 33## i=",i," | x=",x)
-#    if i > x :
-#        break
+
     j = i - 1
     print("##from line 37## j=",j)
 
     tmp = list[i]
 
-    print("##from line 41## list=",list)
+    print("##from line 41## この周の処理するlist=",list)
     
     while 0 <= j < x and i <= x:
         print("##from line 44## x=",x)
@@ -58,9 +57,9 @@ while i <= x :
             j = j - 1
             print("##from line 58## list[j] > tmp | i=",i,"j=",j)
 
-    print("##from line 64## ==end of while loop==")
+    print("##from line 60## ==end of while loop==")
 
-print("##from line 66## list=",list)
+print("##from line 62## list=",list)
 
 if 0 < banme <= len(list) :
     print ("結果：", list[banme - 1])
