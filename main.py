@@ -19,7 +19,11 @@ while True:
         else:
             print(arg,"は、数字でもコマンドでもありません。数字か、bを入力してください。")
 
-banme = int( input("[何番目の数を表示しますか？]") )
+motobanme = int( input("[何番目の数を表示しますか？]") )
+if motobanme.isdecimal() == True:
+    motobanme = banme
+else:
+    print(motobanme,"は数字ではありません。数字を入力してください。")
 
 x = len(list) - 1
 
