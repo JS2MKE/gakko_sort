@@ -29,41 +29,41 @@ x = len(list) - 1
 i = 1
 
 while True :
-    print("##from line 33## ==start of while loop==")
-    print("##from line 34## i=",i," | x=",x)
+    print("##from line 32## ==start of while loop==")
+    print("##from line 33## i=",i," | x=",x)
     if i > x :
         break
     j = i - 1
-    print("##from line 35## j=",j)
+    print("##from line 37## j=",j)
 
     tmp = list[i]
 
-    print("##from line 38## list=",list)
+    print("##from line 41## list=",list)
     
     while 0 <= j < x and i <= x:
         print("##from line 44## x=",x)
         if list[j] < tmp :
             i = i + 1
-            print("##from line 40## list[j] < tmp | i=",i,"j=",j)
+            print("##from line 47## list[j] < tmp | i=",i,"j=",j)
         elif list[j] == tmp :
             del list[j + 1]
             j = j - 1
 #            x = x - 1
-            print("##from line 44## list[j] = tmp | i=",i,"j=",j," | length of list=",len(list))
-            print("##from line 52## list=",list)
+            print("##from line 52## list[j] = tmp | i=",i,"j=",j," | length of list=",len(list))
+            print("##from line 53## list=",list)
         elif list[j] > tmp :
             list[j + 1] = list[j]
             list[j] = tmp
             j = j - 1
-            print("##from line 49## list[j] > tmp | i=",i,"j=",j)
+            print("##from line 58## list[j] > tmp | i=",i,"j=",j)
         else :
-            print("##from line 51## エラー：すべてに一致しない")
+            print("##from line 60## エラー：すべてに一致しない")
             break
 
 #    i = i + 1
-    print("##from line 62## ==end of while loop==")
+    print("##from line 64## ==end of while loop==")
 
-print("##from line 64## list=",list)
+print("##from line 66## list=",list)
 
 if 0 < banme <= len(list) :
     print ("結果：", list[banme - 1])
