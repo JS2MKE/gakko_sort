@@ -27,48 +27,48 @@ while True:
     else:
         print(motobanme,"は数字ではありません。数字を入力してください。")
 
-print("##from line 24## 処理前のlist=",list)
+#print("##from line 24## 処理前のlist=",list)
 
 x = len(list) - 1
 
 i = 1
 
 while i <= x :
-    print("##from line 32## ==start of while loop==")
-    print("##from line 33## i=",i," | x=",x)
+#    print("##from line 32## ==start of while loop==")
+#    print("##from line 33## i=",i," | x=",x)
 
     how_many_deleted = 0
     j = i - 1
-    print("##from line 37## j=",j)
+#    print("##from line 37## j=",j)
 
     tmp = list[i]
 
-    print("##from line 41## この周の処理するlist=",list)
+#    print("##from line 41## この周の処理するlist=",list)
     
     while 0 <= j < x and i <= x:
-        print("##from line 44## x=",x)
+#        print("##from line 44## x=",x)
         if list[j] < tmp :
-            print("##from line 45## how_many_deleted=",how_many_deleted)
+#            print("##from line 45## how_many_deleted=",how_many_deleted)
             i = i + 1 - how_many_deleted
-            print("##from line 47## list[j] < tmp | i=",i,"j=",j)
+#            print("##from line 47## list[j] < tmp | i=",i,"j=",j)
             break
         elif list[j] == tmp :
             del list[j + 1]
             j = j - 1
             x = x - 1
             how_many_deleted = how_many_deleted + 1
-            print("##from line 54## how_many_deleted=",how_many_deleted)
-            print("##from line 55## list[j] = tmp | i=",i,"j=",j," | length of list=",len(list))
-            print("##from line 56## list=",list)
+#            print("##from line 54## how_many_deleted=",how_many_deleted)
+#            print("##from line 55## list[j] = tmp | i=",i,"j=",j," | length of list=",len(list))
+#            print("##from line 56## list=",list)
         else :
             list[j + 1] = list[j]
             list[j] = tmp
             j = j - 1
-            print("##from line 61## list[j] > tmp | i=",i,"j=",j)
+#            print("##from line 61## list[j] > tmp | i=",i,"j=",j)
 
-    print("##from line 63## ==end of while loop==")
+#    print("##from line 63## ==end of while loop==")
 
-print("##from line 65## list=",list)
+#print("##from line 65## list=",list)
 
 if 0 < banme <= len(list) :
     print ("結果：", list[banme - 1])
