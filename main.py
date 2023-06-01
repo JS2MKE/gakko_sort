@@ -28,7 +28,6 @@ while True:
         print(motobanme,"は数字ではありません。数字を入力してください。")
 
 x = len(list) - 1
-
 i = 1
 
 while i <= x :
